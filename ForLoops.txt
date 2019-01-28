@@ -1,0 +1,55 @@
+---Basic For Loops
+
+Sub ChickenNuggets()
+
+    'Loop through first 10 rows
+    For i = 1 To 10
+    
+        'Set values in column 1 to "I will eat"
+        Cells(i, 1).Value = "I will eat"
+        
+        'Set values in column 2 to the sum of the counter + 10
+        Cells(i, 2).Value = "I will eat"
+
+Sub chickennuggets()
+	Dim vp as String
+	vp = "I will eat"
+
+	Dim np As String
+	np = "chicken nuggets"
+
+	For i = 11 to 20
+		Cells(i - 10,1).value = vp
+		Cells(i - 10,2).value = i
+		Cells(i - 10,3).value = np
+	Next i
+
+End Sub
+
+---Conditional Loops---
+
+Sub FizzBuzz()
+
+    'Create a VBA Script that pupulates the second column with the word "Fizz", "Buzz", of "Fizzbuzz" based on the value in the first column
+    For i = 2 To 100
+    
+        If Cells(i, 1).Value Mod 3 = 0 And Cells(i, 1).Value Mod 5 = 0 Then
+        
+        'Enter "Fizzbuzz" in column 2
+        Cells(i, 2).Value = "Fizzbuzz"
+        
+        ElseIf Cells(i, 1).Value Mod 3 = 0 Then
+        
+        'Enter "Fizz" in column 2
+        Cells(i, 2).Value = "Fizz"
+        
+        ElseIf Cells(i, 1).Value Mod 5 = 0 Then
+        
+        'Enter "Buzz" in column 2
+        Cells(i, 2).Value = "Buzz"
+    
+    End If
+    
+    Next i
+    
+End Sub
